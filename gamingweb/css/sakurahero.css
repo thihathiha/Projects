@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url('../img/storybackground.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header{
+	width: 360px;
+	height: 120px;
+	position: relative;
+}
+
+header img{
+	width: 100%;
+	height: 100%;
+}
+
+header::before{
+	content: 'Story Mode';
+	width: 100%;
+	height: 100%;
+	
+	font-family: 'Dancing Script', cursive;
+	color: #222;
+	font-size: 4rem;
+	font-weight: 900;
+
+	position: absolute;
+	top: 15px;
+	left: 46px;
+}
+
+
+.box{
+	height: 370px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box .menu{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.box .menu h2{
+	color: #fff;
+	font-family: 'Comfortaa', cursive;
+	margin-bottom: 50px;
+}
+
+.box .menu .character{
+	display: flex;
+}
+
+.box .menu .character .naruto{
+	width: 120px;
+	height: 90px;
+	background-color: #222;
+	border: 3px double #999;
+	cursor: pointer;
+}
+
+.box .menu .character img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.box .menu .character .naruto::before{
+	content: '';
+	width: 350px;
+	height: 580px;
+	background-image: url('../img/narutoy.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	position: absolute;
+	top: 6%;
+	right: 25px;
+
+	opacity: 0;
+
+	transition: all 0.3s;
+}
+
+.box .menu .character .naruto:hover{
+	border: 2px solid gold;
+}
+
+.box .menu .character .sakura::after{
+	content: 'Selected';
+	width: 90px;
+	height: 30px;
+	background-color: gold;
+	color: #000;
+	font-size: 1.3rem;
+	border: 2px solid #000;
+	text-align: center;
+
+	position: absolute;
+	top: 49.6%;
+	left: 51%;
+	transform: rotate(-33deg);
+
+	opacity: 0;
+
+	animation: select 0.2s 1 linear forwards;
+
+}
+
+@keyframes select{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+.box .menu .character .sasuke{
+	width: 120px;
+	height: 90px;
+	background-color: #222;
+	border: 3px double #999;
+	cursor: pointer;
+}
+
+
+.box .menu .character .sasuke::before{
+	content: '';
+	width: 350px;
+	height: 600px;
+	background-image: url('../img/sasukey.png');
+	background-repeat: no-repeat;
+	background-size: fill;
+
+	position: absolute;
+	top: 6%;
+	right: 45px;
+
+	opacity: 0;
+
+	transition: all 0.3s;
+}
+
+
+.box .menu .character .sasuke:hover{
+	border: 2px solid gold;
+}
+
+.box .menu .character .sakura{
+	width: 120px;
+	height: 90px;
+	background-color: #222;
+	border: 3px double #999;
+	cursor: pointer;
+}
+
+.box .menu .character .sakura::before{
+	content: '';
+	width: 340px;
+	height: 580px;
+	background-image: url('../img/sakuray.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	filter: contrast(120%);
+
+	position: absolute;
+	top: 6%;
+	right: 25px;
+
+	opacity: 1;
+
+	transition: all 0.3s;
+}
+
+
+.box .menu .character .sakura:hover{
+	border: 2px solid gold;
+}
+
+.box .menu .character .gara{
+	width: 120px;
+	height: 90px;
+	background-color: #222;
+	border: 3px double #999;
+	cursor: pointer;
+}
+
+
+.box .menu .character .gara::before{
+	content: '';
+	width: 340px;
+	height: 600px;
+	background-image: url('../img/gara.png');
+	background-repeat: no-repeat;
+	background-size: 90%;
+
+	position: absolute;
+	top: 6%;
+	right: 0;
+
+	opacity: 0;
+
+	transition: all 0.3s;
+}
+
+.box .menu .character .gara:hover{
+	border: 2px solid gold;
+}
+
+footer{
+	margin-top: 75px; 
+	display: flex;
+	justify-content: space-between;
+}
+
+footer .back{
+	text-decoration: none;
+	font-size: 2.5rem;
+	color: gold;
+	margin-left: 20px;
+}
+
+footer .back i{
+	margin-right: 10px;
+}
+
+footer .start{
+	width: 280px;
+	height: 60px;
+	margin-bottom: 130px;
+	margin-right: 130px;
+
+	position: relative;
+
+	animation: startgame 0.4s 1 linear forwards;
+}
+
+footer .start img{
+	width: 100%;
+	height: 100%;
+	filter: brightness(70%);
+}
+
+footer .start::before{
+	content: 'Start Game';
+	width: 100%;
+	height: 100%;
+
+	color: #fff;
+	font-size: 2.3rem;
+
+	position: absolute;
+	top: 0;
+	left: 47px;
+
+	z-index: 1;
+}
+
+@keyframes startgame{
+	0%{
+		transform: scale(0);
+	}
+	50%{
+		transform: scale(0.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+

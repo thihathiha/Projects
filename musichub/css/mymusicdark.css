@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+section .container{
+    width: 405px;
+    height: 570px;
+    margin: auto;
+    background-color: #222;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 405px;
+    background-color: #222;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);
+}
+
+.container .nav{
+    display: flex;
+    padding-top: 10px;
+}
+
+.nav .fa-home{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 7px 0 10px;
+}
+
+.container .search{
+    width: 280px;
+    height: 26px;
+    padding: 3px;
+    background-color: rgb(219, 212, 212);
+}
+.search i{
+    margin-left: 15px;
+    color: #666;
+}
+.search span{
+    margin-left: 35px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.nav .fa-th-large{
+    font-size: 1.6rem;
+    margin-left: 8px;
+    color: red;
+}   
+
+.nav .fa-arrow-alt-circle-down{
+    font-size: 1.6rem;
+    margin-left: 7px;
+    color: #fff;
+}
+
+.navbar{
+    padding: 15px 0 10px 15px;
+    box-shadow: 0px 0px 3px 0px rgba(59, 2, 2, 0.1);
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a{
+    font-size: 0.8rem;
+    color: #fff;
+    margin-right: 45px;
+    padding-bottom: 10px;
+}
+
+.navbar ul li a.current{
+    border-bottom: 2px solid red;
+}
+
+.profile{
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    box-shadow: 0px 2px 4px rgb(223, 214, 214);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.profile .fa-sun{
+    color: #fff;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 9px;
+    right: 42px;
+}
+
+.profile .fa-toggle-on{
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+
+.profile .fa-moon{
+    color: #fff;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+}
+
+.profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile p{
+    color: #fff;
+}
+
+.profile .menu{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu div i{
+    color: #fff;
+}
+
+.menu div p{
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.content{
+    margin-top: 5px;
+}
+
+.content div{
+    height: 42px;
+    padding: 10px 8px;
+    border-bottom: 1px solid #888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content div i{
+    margin-right: 15px;
+    color: #fff;
+}
+
+.content div label{
+    color: #fff;
+    font-size: 0.9rem;
+}

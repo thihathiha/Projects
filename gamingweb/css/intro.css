@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Indie+Flower&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #000;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.intro{
+	width: 300px;
+	height: 300px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+
+	
+}
+
+.intro span::before{
+	content: 'MgTha';
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 3.5rem;
+	letter-spacing: 20px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 5px #222;
+
+	position: absolute;
+	top: 30%;
+	left: 13%;
+
+	animation: firstintro 2.5s 1 linear forwards;
+}
+
+.intro span::after{
+	content: 'presents';
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+
+	position: absolute;
+	top: 49%;
+	left: 63%;
+
+	animation: firstintro 2.5s 1 linear forwards;
+}
+
+.intro img{
+	width: 300px;
+	margin-bottom: 50px;
+	animation: secintro 3s 1 linear;
+}
+
+.intro a{
+	text-decoration: none;
+	text-transform: uppercase;	
+	font-size: 2.3rem;
+	font-family: 'M PLUS 1 Code', sans-serif;
+	letter-spacing: 4px;
+	font-weight: 900;
+
+	background: linear-gradient(135deg,red,yellow);
+	-webkit-background-clip: text;
+	color: transparent;
+
+	animation: start 1s infinite linear 2.5s;	
+
+	opacity: 0;
+
+}
+
+@keyframes firstintro{
+	0%{
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+@keyframes secintro{
+	0%{
+		opacity: 0;
+	}
+	80%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+
+@keyframes start{
+	0%{
+		opacity: 0.9;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}

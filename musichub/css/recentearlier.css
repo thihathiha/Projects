@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+section .container{
+    width: 405px;
+    height: 550px;
+    margin: auto;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 405px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.15);
+}
+
+.container .nav{
+    display: flex;
+    padding-top: 10px;
+}
+
+.nav .fa-home{
+    color: #666;
+    font-size: 1.6rem;
+    margin: 0 7px 0 10px;
+}
+
+.container .search{
+    width: 280px;
+    height: 26px;
+    padding: 3px;
+    background-color: rgb(219, 212, 212);
+}
+.search i{
+    margin-left: 15px;
+    color: #666;
+}
+.search span{
+    margin-left: 35px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.nav .fa-th-large{
+    font-size: 1.6rem;
+    margin-left: 8px;
+    color: red;
+}   
+
+.nav .fa-arrow-alt-circle-down{
+    font-size: 1.6rem;
+    margin-left: 7px;
+    color: #666;
+}
+
+.navbar{
+    padding: 15px 0 10px 15px;
+    box-shadow: 0px 0px 3px 0px rgba(59, 2, 2, 0.05);
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li a{
+    font-size: 0.8rem;
+    color: #222;
+    margin-right: 45px;
+    padding-bottom: 10px;
+}
+
+.navbar ul li a.current{
+    border-bottom: 2px solid red;
+}
+
+.head{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head a{
+    margin-top: 15px;
+    color: #000;
+    padding: 6px 50px;
+}
+
+.head a:hover{
+    background-color: rgb(221, 216, 216);
+}
+
+.head a.in{
+    border-bottom: 2px solid red;
+}
+
+.history{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    border-top: 1px solid rgb(248, 241, 241);
+    border-bottom: 1px solid rgb(230, 227, 227);
+}
+
+.history div{
+    display: flex;
+}
+
+.history div i{
+    margin-left: 10px;
+    color: #222;
+}
+
+.history p{
+    margin: 0px 5px 0px 12px;
+}
+
+.history .fa-sort-down{
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #222;
+}
+
+.history .fa-sort-up{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-right: 15px;
+    color: #222;
+}
+
+.footer ul{
+    margin-left: 40px;
+    list-style-type: disc;
+}
+
+.footer ul li{
+    font-size: 0.9rem;
+    padding: 13px 5px;
+    border-bottom: 1px solid rgb(226, 224, 224);
+}

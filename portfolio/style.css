@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+nav{
+	width: 100%;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+nav img{
+	width: 70px;
+
+	cursor: pointer;
+}
+
+nav ul{
+	list-style-type: none;
+
+	display: flex;
+}
+
+nav ul li{
+	margin-left: 20px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #919191;
+	padding: 10px 20px;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+
+	transition: all 0.2s;
+}
+
+nav ul li a:hover{
+	color: #fff;
+	background-color: #209e87;
+}
+
+nav i{
+	opacity: 0;
+}
+
+nav .greeting{
+	text-decoration: none;
+	color: #29baa0; 
+	font-size: 0.9rem;
+	border-bottom: 2px solid #29baa0;
+	padding-bottom: 2px;
+}
+
+.content{
+	width: 100%;
+	height: 600px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.content .model{
+	width: 500px;
+	height: 500px;
+}
+
+.content .model img{
+	width: 100%;
+	height: 100%;
+}
+
+.content .text{
+	width: 500px;
+	height: 200px;
+}
+
+.content .text h1{
+	color: #333;
+	font-size: 3.7rem;
+	letter-spacing: 1px;
+	font-weight: 100;
+}
+
+.content .text p{
+	color: #919191;
+	line-height: 1.7rem;
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.content .text a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #fff;
+	background-color: #039677;
+	font-size: 1rem;
+	padding: 12px 32px;
+	border-radius: 35px;
+
+	transition: all 0.2s;
+}
+
+.content .text a:hover{
+	background-color: #29f0c5;
+}
+
+.skill{
+	width: 90%;
+	height: 600px;
+
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.skill .skill-text{
+	width: 45%;
+	height: 100%;
+}
+
+.skill .skill-img{
+	width: 52%;
+	height: 68%;
+}
+
+.skill .skill-text h4{
+	text-transform: uppercase;
+	font-weight: 100;
+	color: #00ffb7;
+	letter-spacing: 1px;
+}
+
+.skill .skill-text h1{
+	font-weight: 100;
+	font-size: 3.5rem;
+	letter-spacing: 1px;
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+.skill .skill-text .icon-para{
+	width: 100%;
+
+	display: flex;
+	margin-bottom: 35px;
+}
+
+.skill .skill-text .icon-para .icon{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skill .skill-text .icon-para .icon i{
+	font-size: 1.2rem;
+}
+
+.skill .skill-text .icon-para .para{
+	width: calc(100% - 65px);
+	height: 100%;
+}
+
+.skill .skill-text .para strong{
+	font-size: 0.9rem;
+}
+
+.skill .skill-text .para p{
+	color: #919191;
+	line-height: 1.4rem;
+	margin-top: 15px;
+}
+
+.fa-html5{
+	color: red;
+}
+
+.fa-css3-alt{
+	color: blue;
+}
+
+.fa-js-square{
+	color: tomato;
+}
+
+.skill .skill-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.recent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.recent div span{
+	color: rgb(98, 218, 172);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 1.2rem;
+}
+
+.recent div h1{
+	color: rgb(54, 56, 56);
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	font-size: 3rem;
+	font-weight: 100;
+	margin-top: 10px;
+}
+
+.recent a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	background-color: #039677;
+	padding: 10px 45px;
+	border-radius: 15px;
+}
+
+.recent a:hover{
+	background-color: #29f0c5;
+}
+
+.client{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	margin-top: 70px;
+}
+
+.client span{
+	color: rgb(98, 218, 172);
+	font-size: 1.1rem;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.client h1{
+	color: rgb(54, 56, 56);
+	font-size: 3rem;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+	font-weight: 100;
+	
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.client .client-container{
+	width: 80%;
+	height: 400px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.client .client-container .client-box{
+	width: 280px;
+	height: 350px;
+	background-color: #fff;
+	box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2);
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+
+	transition: all 0.2s;
+}
+
+.client .client-container .client-box:hover{
+	background-color: rgb(52, 168, 120);
+	transform: translateY(-10px);
+}
+
+.client .client-container .client-box img{
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.client .client-container .client-box .star{
+	display: flex;
+}
+
+.client .client-container .client-box .star i{
+	color: goldenrod;
+}
+
+.client .client-container .client-box p{
+	width: 210px;
+	height: 75px;
+	font-size: 0.9rem;
+	overflow: hidden;
+
+	text-align: center;
+}
+
+.client .client-container .client-box a{
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 20px;
+	background-color: #039677;
+	text-transform: capitalize;
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+
+.contact img{
+	width: 400px;
+}
+
+.contact h1{
+	color: rgb(54, 56, 56);
+	font-size: 2.5rem;
+	letter-spacing: 1px;
+	font-weight: 100;
+	margin-top: 25px;
+}
+
+.contact .inputbox{
+	width: 370px;
+	height: 50px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.2);
+	border-radius: 30px;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.contact .inputbox input{
+	border: none;
+	outline: none;
+	text-align: center;
+}
+
+.contact .inputbox a{
+	text-decoration: none;
+	color: #fff;
+	padding: 8px 30px;
+	background-color: #039677;
+	border-radius: 25px;
+}
+
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+footer span{
+	color: rgb(54, 56, 56);
+	font-size: 0.9rem;
+}
+
+@media only screen and (max-width:450px){
+	body{
+		width: 100%;
+	}
+	nav ul{
+		display: none;
+	}
+	nav i{
+		opacity: 1;
+	}
+	.content .model img{
+		display: none;
+	}
+	.content .text{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		margin-right: 50px;
+	}
+	.text h1{
+		width: 300px;
+	}
+	.client-container{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+
+
+
+
+
+
+
+
+
